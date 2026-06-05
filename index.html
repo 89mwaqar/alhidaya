@@ -161,53 +161,54 @@
 
     /* VIDEO SECTION — bigger & clickable */
     .vid-section-label {
-      font-size: 12px; font-weight: 700;
+      font-size: 13px; font-weight: 700;
       letter-spacing: .1em; text-transform: uppercase;
-      color: var(--muted); margin-bottom: 10px;
+      color: var(--muted); margin-bottom: 12px;
     }
-    .vid-row { display:flex; gap:12px; overflow-x:auto; padding-bottom:6px; }
-    .vid-row::-webkit-scrollbar { height: 4px; }
-    .vid-row::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 2px; }
+    .vid-row { display:flex; gap:14px; overflow-x:auto; padding-bottom:8px; }
+    .vid-row::-webkit-scrollbar { height: 5px; }
+    .vid-row::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 3px; }
     .vid-thumb {
-      flex-shrink:0; width:130px;
-      border-radius:10px; overflow:hidden;
+      flex-shrink:0; width:200px;
+      border-radius:12px; overflow:hidden;
       position:relative; cursor:pointer;
       border:2px solid var(--border); background:#000;
       transition: border-color .2s, transform .2s, box-shadow .2s;
       display: block;
     }
-    .vid-thumb:hover { border-color:var(--pink); transform: scale(1.04); box-shadow: 0 6px 20px rgba(233,30,140,.25); }
-    .vid-thumb img { width:100%; height:88px; object-fit:cover; display:block; opacity:.82; pointer-events:none; }
+    .vid-thumb:hover { border-color:var(--pink); transform: scale(1.03); box-shadow: 0 8px 24px rgba(233,30,140,.3); }
+    .vid-thumb img { width:100%; height:140px; object-fit:cover; display:block; opacity:.85; pointer-events:none; }
     .vid-dur {
-      position:absolute; bottom:6px; right:7px;
-      font-size:11px; color:#fff; font-weight:700;
-      background:rgba(0,0,0,.65); padding:2px 6px; border-radius:4px;
+      position:absolute; bottom:32px; right:8px;
+      font-size:12px; color:#fff; font-weight:700;
+      background:rgba(0,0,0,.7); padding:3px 8px; border-radius:5px;
       pointer-events:none;
     }
     .vid-play {
-      position:absolute; top:50%; left:50%;
-      transform:translate(-50%,-58%);
-      width:34px; height:34px;
+      position:absolute; top:42%; left:50%;
+      transform:translate(-50%,-50%);
+      width:46px; height:46px;
       background:rgba(255,255,255,.92); border-radius:50%;
       display:flex; align-items:center; justify-content:center;
-      box-shadow: 0 2px 8px rgba(0,0,0,.3);
+      box-shadow: 0 3px 12px rgba(0,0,0,.35);
       transition: background .2s, transform .2s;
       pointer-events:none;
     }
-    .vid-thumb:hover .vid-play { background: var(--pink); transform: translate(-50%,-58%) scale(1.1); }
+    .vid-thumb:hover .vid-play { background: var(--pink); transform: translate(-50%,-50%) scale(1.1); }
     .vid-play::after {
       content:'';
       border-style:solid;
-      border-width:7px 0 7px 13px;
+      border-width:9px 0 9px 16px;
       border-color:transparent transparent transparent var(--pink);
-      margin-left:3px;
+      margin-left:4px;
     }
     .vid-thumb:hover .vid-play::after { border-color: transparent transparent transparent #fff; }
     .vid-label {
-      background: rgba(0,0,0,.5);
-      color: #fff; font-size: 10px;
-      padding: 4px 6px; text-align: center;
-      font-weight: 600; pointer-events:none;
+      background: rgba(0,0,0,.6);
+      color: #fff; font-size: 12px;
+      padding: 7px 10px; text-align: center;
+      font-weight: 700; pointer-events:none;
+      letter-spacing: .03em;
     }
 
     /* Video Modal */
@@ -624,7 +625,7 @@
       <a href="#" class="logo">AL <span>HIDAYA</span></a>
       <div class="header-tagline">Quranic Learning Resources — Pakistan</div>
     </div>
-    <a href="https://wa.me/923179551011" target="_blank" class="wa-header-btn">
+    <a href="https://wa.me/923179551011?text=Assalam%20o%20Alaikum!%20%F0%9F%8C%99%20I%20am%20interested%20in%20the%20Top%20600%20Quran%20Words%20eBook.%20Please%20guide%20me%20about%20ordering." target="_blank" class="wa-header-btn">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Chat on WhatsApp
     </a>
@@ -1062,14 +1063,14 @@
     <div>
       <h4>Contact & Links</h4>
       <p style="margin-bottom:10px;">
-        <a href="https://wa.me/923179551011" style="color:#6effa0;">WhatsApp: +92 317 9551011</a><br/>
+        <a href="https://wa.me/923179551011?text=Assalam%20o%20Alaikum!%20%F0%9F%8C%99%20I%20am%20interested%20in%20ordering%20the%20Top%20600%20Quran%20Words%20eBook.%20Please%20guide%20me." style="color:#6effa0;">WhatsApp: +92 317 9551011</a><br/>
         Hours: 9 AM – 7 PM (Fri Off)
       </p>
       <ul>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Refund Policy</a></li>
         <li><a href="#">Terms of Service</a></li>
-        <li><a href="https://wa.me/923179551011">Contact Us</a></li>
+        <li><a href="https://wa.me/923179551011?text=Assalam%20o%20Alaikum!%20%F0%9F%8C%99%20I%20want%20to%20order%20the%20Top%20600%20Quran%20Words%20eBook.%20Please%20help%20me.">Contact Us</a></li>
       </ul>
     </div>
   </div>
@@ -1079,7 +1080,7 @@
 </footer>
 
 <!-- Floating WhatsApp -->
-<a href="https://wa.me/923179551011" target="_blank" class="wa-float" title="Chat on WhatsApp">
+<a href="https://wa.me/923179551011?text=Assalam%20o%20Alaikum!%20%F0%9F%8C%99%20I%20am%20interested%20in%20the%20Top%20600%20Quran%20Words%20eBook.%20Please%20guide%20me%20about%20ordering." target="_blank" class="wa-float" title="Chat on WhatsApp">
   <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
@@ -1238,21 +1239,22 @@
       ? `MCB Islamic Bank\nA/C: 1731004648860001\nIBAN: PK54MCIB1731004648860001\nName: Muhammad Waqar`
       : `${selectedPayment}: 03339830910 (Muhammad Waqar)`;
 
-    const msg = `*New Order — AL HIDAYA* 🌙
+    const msg = `Assalam o Alaikum! 🌙
 
-*Name:* ${order.name}
-*Phone:* ${order.phone}
-*City:* ${order.city}
-*Address:* ${order.address}
+I want to order from AL HIDAYA!
 
-*Product:* ${order.product}
-*Total:* ${order.price}
-*Payment Method:* ${order.payment}
+📦 *Product:* ${order.product}
+💰 *Total:* ${order.price}
+💳 *Payment:* ${order.payment}
 
-*Payment Details:*
-${payInfo}
+👤 *My Details:*
+• Name: ${order.name}
+• Phone: ${order.phone}
+• City: ${order.city}
+• Address: ${order.address}
 
-Please confirm my order. JazakAllah Khair! 🤲`;
+I am sending the payment now. Please confirm my order.
+JazakAllah Khair! 🤲`;
 
     const waURL = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
     document.getElementById('waSuccessBtn').href = waURL;
