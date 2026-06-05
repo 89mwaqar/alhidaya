@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 600 Repeated Words of the Quran + Bonus – AL HIDAYA</title>
+  <meta name="description" content="Learn the top 600 most repeated words of the Quran. 5 FREE Bonus eBooks included. Order now — PKR 900 only." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Serif+Display&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --pink:         #e91e8c;
+      --pink-dark:    #c0166f;
+      --pink-deeper:  #9c1059;
+      --pink-light:   #fce4f3;
+      --pink-pale:    #fff0fa;
+      --pink-mid:     #f8d0ed;
+      --rose:         #ff6bb5;
+      --gold:         #c8973a;
+      --gold-light:   #e8b54a;
+      --charcoal:     #1a1a2e;
+      --charcoal-mid: #2d2d44;
+      --text:         #1a1a2e;
+      --muted:        #6b5b6e;
+      --border:       #f0c8e8;
+      --border-dark:  #e0a8d0;
+      --white:        #ffffff;
+      --red:          #e53935;
+      --bg:           #fff8fd;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    /* ── ANNOUNCEMENT BAR ── */
+    .ann-bar {
+      background: linear-gradient(90deg, var(--pink-deeper) 0%, var(--pink) 50%, var(--pink-deeper) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 11px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .06em;
+    }
+    .ann-bar span { color: #ffd6f0; }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--white);
+      border-bottom: 2px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      box-shadow: 0 2px 16px rgba(233,30,140,.08);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--charcoal);
+      text-decoration: none;
+      letter-spacing: .04em;
+    }
+    .logo span { color: var(--pink); }
+    .header-tagline { font-size: 11px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+    .wa-header-btn {
+      display: flex; align-items: center; gap: 7px;
+      background: #25D366; color: #fff; text-decoration: none;
+      padding: 9px 18px; border-radius: 8px;
+      font-size: 13px; font-weight: 700;
+      transition: background .2s; white-space: nowrap;
+    }
+    .wa-header-btn:hover { background: #1ebe5d; }
+
+    /* ── PRODUCT HERO ── */
+    .product-section {
+      max-width: 1160px;
+      margin: 44px auto 0;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+    @media(max-width:820px){ .product-section { grid-template-columns:1fr; gap:28px; } }
+
+    /* Gallery */
+    .gallery { position: sticky; top: 82px; }
+    .gallery-main {
+      width: 100%; aspect-ratio: 1;
+      border-radius: 16px; overflow: hidden;
+      background: var(--pink-pale);
+      margin-bottom: 12px;
+      border: 2px solid var(--border);
+      box-shadow: 0 8px 32px rgba(233,30,140,.1);
+    }
+    .gallery-main img { width:100%; height:100%; object-fit:cover; display:block; transition: transform .5s ease; }
+    .gallery-main:hover img { transform: scale(1.04); }
+    .thumbs { display:flex; gap:8px; flex-wrap:wrap; }
+    .thumbs button {
+      width:72px; height:72px;
+      border-radius:10px; overflow:hidden;
+      border: 2px solid transparent;
+      padding:0; cursor:pointer; background:none;
+      transition: border-color .2s, transform .15s;
+    }
+    .thumbs button.active, .thumbs button:hover { border-color: var(--pink); transform: scale(1.05); }
+    .thumbs button img { width:100%; height:100%; object-fit:cover; display:block; }
+
+    /* Product info */
+    .prod-info { display:flex; flex-direction:column; gap:18px; }
+    .prod-badge {
+      display:inline-flex; align-items:center; gap:6px;
+      background: linear-gradient(135deg, var(--pink) 0%, var(--pink-deeper) 100%);
+      color: #fff;
+      font-size:11px; font-weight:700;
+      letter-spacing:.1em; text-transform:uppercase;
+      padding:5px 14px; border-radius:20px;
+      width: fit-content;
+    }
+    .prod-info h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px; font-weight: 700;
+      line-height: 1.22; color: var(--charcoal);
+    }
+    .stars { color: #ff8c00; font-size: 17px; letter-spacing: 2px; }
+    .reviews-count { font-size: 13px; color: var(--muted); margin-left: 6px; }
+    .price-block {
+      background: linear-gradient(135deg, var(--pink-pale) 0%, #ffe8f8 100%);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 22px;
+      display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    }
+    .price-sale { font-size:30px; font-weight:700; color:var(--pink); font-family:'Playfair Display',serif; }
+    .price-orig { font-size:16px; color: var(--muted); text-decoration:line-through; }
+    .discount-pill {
+      background: var(--red); color: #fff;
+      font-size: 12px; font-weight:700;
+      padding: 4px 12px; border-radius: 20px;
+    }
+
+    /* VIDEO SECTION — bigger & clickable */
+    .vid-section-label {
+      font-size: 12px; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 10px;
+    }
+    .vid-row { display:flex; gap:12px; overflow-x:auto; padding-bottom:6px; }
+    .vid-row::-webkit-scrollbar { height: 4px; }
+    .vid-row::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 2px; }
+    .vid-thumb {
+      flex-shrink:0; width:130px;
+      border-radius:10px; overflow:hidden;
+      position:relative; cursor:pointer;
+      border:2px solid var(--border); background:#000;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+      text-decoration: none; display: block;
+    }
+    .vid-thumb:hover { border-color:var(--pink); transform: scale(1.04); box-shadow: 0 6px 20px rgba(233,30,140,.25); }
+    .vid-thumb img { width:100%; height:88px; object-fit:cover; display:block; opacity:.82; }
+    .vid-dur {
+      position:absolute; bottom:6px; right:7px;
+      font-size:11px; color:#fff; font-weight:700;
+      background:rgba(0,0,0,.65); padding:2px 6px; border-radius:4px;
+    }
+    .vid-play {
+      position:absolute; top:50%; left:50%;
+      transform:translate(-50%,-58%);
+      width:34px; height:34px;
+      background:rgba(255,255,255,.92); border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow: 0 2px 8px rgba(0,0,0,.3);
+      transition: background .2s, transform .2s;
+    }
+    .vid-thumb:hover .vid-play { background: var(--pink); transform: translate(-50%,-58%) scale(1.1); }
+    .vid-play::after {
+      content:'';
+      border-style:solid;
+      border-width:7px 0 7px 13px;
+      border-color:transparent transparent transparent var(--pink);
+      margin-left:3px;
+    }
+    .vid-thumb:hover .vid-play::after { border-color: transparent transparent transparent #fff; }
+    .vid-label {
+      background: rgba(0,0,0,.5);
+      color: #fff; font-size: 10px;
+      padding: 4px 6px; text-align: center;
+      font-weight: 600;
+    }
+
+    /* CTA button */
+    .btn-order-cta {
+      background: linear-gradient(135deg, var(--pink) 0%, var(--pink-deeper) 100%);
+      color: var(--white); border: none;
+      padding: 17px 28px; border-radius: 12px;
+      font-family: 'Lato', sans-serif;
+      font-size: 17px; font-weight: 700;
+      letter-spacing: .03em; cursor: pointer;
+      transition: transform .15s, box-shadow .2s;
+      display: flex; align-items:center; gap:8px;
+      text-decoration:none; width:100%; justify-content:center;
+      box-shadow: 0 4px 20px rgba(233,30,140,.4);
+    }
+    .btn-order-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(233,30,140,.5); }
+    .trust-row { display:flex; justify-content:center; gap:18px; flex-wrap:wrap; }
+    .trust-item { display:flex; align-items:center; gap:5px; font-size:12px; color:var(--muted); }
+
+    /* ── SECTIONS ── */
+    .section-wrap { max-width:1160px; margin:70px auto 0; padding:0 20px; }
+    .sec-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px; font-weight: 700;
+      text-align: center; margin-bottom: 8px; color: var(--charcoal);
+    }
+    .pink-rule { width:60px; height:3px; background:var(--pink); border-radius:2px; margin:12px auto 28px; }
+
+    /* Feature cards */
+    .feat-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(230px,1fr)); gap:16px; }
+    .feat-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 12px; padding: 22px 18px;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .feat-card:hover { box-shadow: 0 6px 24px rgba(233,30,140,.12); transform: translateY(-3px); }
+    .feat-card .fc-icon { font-size: 28px; margin-bottom: 10px; }
+    .feat-card h3 { font-size: 15px; font-weight: 700; color: var(--charcoal); margin-bottom: 6px; }
+    .feat-card p { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+
+    /* Book features alternating */
+    .book-feats { display:flex; flex-direction:column; gap:56px; }
+    .book-feat { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+    @media(max-width:700px){ .book-feat { grid-template-columns:1fr; } }
+    .book-feat.rev { direction:rtl; }
+    .book-feat.rev > * { direction:ltr; }
+    .book-feat img { width:100%; border-radius:14px; box-shadow:0 8px 32px rgba(0,0,0,.1); display:block; }
+    .book-feat-txt h3 {
+      font-family:'Playfair Display',serif; font-size:22px; font-weight:700;
+      margin-bottom:12px; color:var(--charcoal);
+    }
+    .book-feat-txt p { font-size:14.5px; color:var(--muted); line-height:1.7; }
+
+    /* ── BONUS SECTION ── */
+    .bonus-section {
+      background: linear-gradient(135deg, #fff0fa 0%, #fce4f3 100%);
+      border-top: 2px solid var(--border); border-bottom: 2px solid var(--border);
+      padding: 56px 24px; margin-top: 70px;
+    }
+    .bonus-inner { max-width: 900px; margin: 0 auto; }
+    .bonus-header { text-align:center; margin-bottom:36px; }
+    .bonus-header h2 {
+      font-family:'Playfair Display',serif; font-size:32px; font-weight:700;
+      color: var(--charcoal); margin-bottom:8px;
+    }
+    .bonus-header h2 span { color: var(--pink); }
+    .bonus-header p { font-size:15px; color:var(--muted); }
+    .bonus-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:18px; }
+    .bonus-card {
+      background: var(--white); border-radius:14px;
+      padding: 22px 20px; border: 2px solid var(--border);
+      display:flex; gap:14px; align-items:flex-start;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .bonus-card:hover { box-shadow:0 8px 28px rgba(233,30,140,.15); transform:translateY(-3px); }
+    .bonus-num {
+      min-width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--pink) 0%, var(--pink-deeper) 100%);
+      color: #fff; border-radius: 50%;
+      display:flex; align-items:center; justify-content:center;
+      font-size: 14px; font-weight: 900; flex-shrink:0;
+    }
+    .bonus-card-txt h4 { font-size:15px; font-weight:700; color:var(--charcoal); margin-bottom:4px; }
+    .bonus-card-txt p { font-size:13px; color:var(--muted); line-height:1.5; }
+    .bonus-value {
+      display:inline-block; margin-top:6px;
+      font-size:11px; font-weight:700; color:var(--pink);
+      background:var(--pink-light); padding:2px 8px; border-radius:10px;
+    }
+    .bonus-total {
+      margin-top:28px; text-align:center;
+      background: var(--white); border:2px dashed var(--pink);
+      border-radius:14px; padding:20px 24px;
+    }
+    .bonus-total p { font-size:14px; color:var(--muted); margin-bottom:6px; }
+    .bonus-total .big-val { font-family:'Playfair Display',serif; font-size:28px; font-weight:700; color:var(--pink); }
+    .bonus-total .you-pay { font-size:16px; color:var(--muted); margin-top:4px; }
+    .bonus-total .you-pay strong { color:var(--charcoal); font-size:22px; }
+
+    /* ── PROOF BANNER ── */
+    .proof-banner {
+      background: var(--charcoal);
+      color: var(--white); border-radius:16px;
+      padding:48px 32px; text-align:center; margin-top:70px;
+    }
+    .proof-banner h2 { font-family:'Playfair Display',serif; font-size:30px; font-weight:700; margin-bottom:6px; }
+    .proof-banner .pink-num { color: var(--rose); }
+    .proof-banner p { color:#aaa; font-size:15px; margin-bottom:24px; }
+    .btn-proof-cta {
+      display:inline-flex; align-items:center; gap:8px;
+      background:linear-gradient(135deg,var(--pink) 0%,var(--pink-deeper) 100%);
+      color:#fff; text-decoration:none; padding:14px 28px; border-radius:10px;
+      font-size:16px; font-weight:700; transition:transform .15s, box-shadow .2s;
+      box-shadow:0 4px 20px rgba(233,30,140,.4);
+    }
+    .btn-proof-cta:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(233,30,140,.5); }
+
+    /* ── ORDER SECTION ── */
+    .order-section { max-width:900px; margin:70px auto 0; padding:0 20px; }
+    .order-card {
+      background: var(--white); border:2px solid var(--border);
+      border-radius:18px; overflow:hidden;
+      box-shadow:0 8px 40px rgba(233,30,140,.1);
+    }
+    .order-card-header {
+      background: linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-mid) 100%);
+      color: var(--white); padding:24px 34px;
+      display:flex; align-items:center; gap:16px;
+    }
+    .order-card-header .icon {
+      width:46px; height:46px;
+      background:linear-gradient(135deg,var(--pink) 0%,var(--pink-deeper) 100%);
+      border-radius:50%; display:flex; align-items:center; justify-content:center;
+      font-size:20px; flex-shrink:0;
+    }
+    .order-card-header h2 { font-family:'Playfair Display',serif; font-size:23px; font-weight:700; }
+    .order-card-header p { font-size:13px; color:#bbb; margin-top:2px; }
+    .order-body { padding:34px; }
+
+    .section-label {
+      font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+      color:var(--pink); margin-bottom:12px; display:block;
+    }
+
+    /* Product options */
+    .product-options { display:flex; flex-direction:column; gap:14px; margin-bottom:30px; }
+    .product-option {
+      border:2px solid var(--border); border-radius:12px;
+      padding:18px 20px; cursor:pointer;
+      transition:border-color .2s, background .2s, box-shadow .2s;
+      display:flex; align-items:center; gap:14px; position:relative;
+    }
+    .product-option:hover { border-color:var(--pink-dark); background:var(--pink-pale); }
+    .product-option.selected { border-color:var(--pink); background:var(--pink-pale); box-shadow:0 4px 16px rgba(233,30,140,.15); }
+    .product-option input[type=radio] { display:none; }
+    .radio-dot {
+      width:22px; height:22px; border-radius:50%;
+      border:2px solid var(--border-dark); flex-shrink:0;
+      display:flex; align-items:center; justify-content:center;
+      transition:border-color .2s;
+    }
+    .product-option.selected .radio-dot { border-color:var(--pink); }
+    .radio-dot::after {
+      content:''; width:12px; height:12px; border-radius:50%;
+      background:var(--pink); display:none;
+    }
+    .product-option.selected .radio-dot::after { display:block; }
+    .opt-img { width:58px; height:58px; border-radius:10px; object-fit:cover; flex-shrink:0; border:1px solid var(--border); }
+    .opt-details { flex:1; }
+    .opt-name { font-weight:700; font-size:15px; color:var(--charcoal); }
+    .opt-type { font-size:12px; color:var(--muted); margin-top:2px; }
+    .opt-includes { font-size:11px; color:var(--pink-deeper); margin-top:4px; font-weight:700; }
+    .opt-price { font-family:'Playfair Display',serif; font-size:22px; font-weight:700; color:var(--pink); flex-shrink:0; }
+    .opt-badge {
+      position:absolute; top:-10px; left:16px;
+      font-size:10px; font-weight:700;
+      background:linear-gradient(135deg,var(--pink) 0%,var(--pink-deeper) 100%); color:#fff;
+      padding:3px 10px; border-radius:10px;
+      letter-spacing:.06em; text-transform:uppercase;
+    }
+
+    /* Payment details box */
+    .pay-details-box {
+      background: var(--pink-pale); border:1px solid var(--border);
+      border-radius:10px; padding:16px 18px; margin-top:14px;
+      display:none;
+    }
+    .pay-details-box.show { display:block; }
+    .pay-details-box h4 { font-size:13px; font-weight:700; color:var(--charcoal); margin-bottom:10px; }
+    .pay-detail-row { display:flex; gap:8px; align-items:center; margin-bottom:6px; }
+    .pay-detail-row .lbl { font-size:12px; font-weight:700; color:var(--muted); min-width:80px; }
+    .pay-detail-row .val { font-size:13px; color:var(--charcoal); font-weight:600; }
+    .copy-btn {
+      background:var(--pink); color:#fff; border:none; border-radius:4px;
+      font-size:11px; font-weight:700; padding:3px 8px; cursor:pointer; margin-left:auto;
+      transition:background .2s;
+    }
+    .copy-btn:hover { background:var(--pink-dark); }
+
+    /* Form fields */
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:26px; }
+    @media(max-width:600px){ .form-grid { grid-template-columns:1fr; } }
+    .form-grid .full { grid-column:1/-1; }
+    .field { display:flex; flex-direction:column; gap:6px; }
+    .field label { font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--charcoal-mid); }
+    .field label .req { color:var(--red); margin-left:2px; }
+    .field input, .field textarea {
+      padding:13px 15px; border:1.5px solid var(--border);
+      border-radius:9px; font-family:inherit; font-size:14.5px;
+      color:var(--charcoal); background:var(--bg);
+      transition:border-color .2s, box-shadow .2s; outline:none;
+    }
+    .field input:focus, .field textarea:focus {
+      border-color:var(--pink); box-shadow:0 0 0 3px rgba(233,30,140,.1); background:var(--white);
+    }
+    .field input.error { border-color:var(--red); }
+    .field .err-msg { font-size:12px; color:var(--red); display:none; }
+    .field input.error ~ .err-msg { display:block; }
+    .field textarea { resize:vertical; min-height:82px; }
+
+    /* Payment options */
+    .payment-options { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:14px; }
+    .pay-opt {
+      flex:1; min-width:130px; border:2px solid var(--border);
+      border-radius:12px; padding:16px 12px; cursor:pointer;
+      text-align:center; transition:all .2s; position:relative;
+    }
+    .pay-opt:hover { border-color:var(--pink-dark); background:var(--pink-pale); }
+    .pay-opt.selected { border-color:var(--pink); background:var(--pink-pale); box-shadow:0 4px 16px rgba(233,30,140,.15); }
+    .pay-opt input { display:none; }
+    .pay-logo { font-size:24px; margin-bottom:6px; }
+    .pay-name { font-size:13px; font-weight:700; color:var(--charcoal); }
+    .pay-desc { font-size:11px; color:var(--muted); margin-top:2px; }
+    .pay-check {
+      position:absolute; top:8px; right:8px;
+      width:20px; height:20px;
+      background:linear-gradient(135deg,var(--pink) 0%,var(--pink-deeper) 100%);
+      border-radius:50%; display:none; align-items:center; justify-content:center;
+      color:#fff; font-size:11px; font-weight:900;
+    }
+    .pay-opt.selected .pay-check { display:flex; }
+
+    /* Order summary */
+    .order-summary {
+      background:linear-gradient(135deg,var(--pink-pale) 0%,#ffe8f8 100%);
+      border:2px solid var(--border); border-radius:12px;
+      padding:18px 22px; margin-bottom:24px;
+      display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;
+    }
+    .summary-item { font-size:14px; color:var(--muted); }
+    .summary-item strong { color:var(--charcoal); }
+    .summary-total { font-family:'Playfair Display',serif; font-size:24px; font-weight:700; color:var(--pink); }
+
+    /* Submit */
+    .btn-submit {
+      width:100%; padding:18px;
+      background:linear-gradient(135deg,var(--pink) 0%,var(--pink-deeper) 100%);
+      color:var(--white); border:none; border-radius:12px;
+      font-family:'Lato',sans-serif; font-size:18px; font-weight:700;
+      letter-spacing:.04em; cursor:pointer;
+      transition:transform .15s, box-shadow .2s;
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      box-shadow:0 4px 24px rgba(233,30,140,.4);
+    }
+    .btn-submit:hover { transform:translateY(-2px); box-shadow:0 8px 32px rgba(233,30,140,.5); }
+    .btn-submit:active { transform:scale(.99); }
+    .btn-submit:disabled { background:#ccc; cursor:not-allowed; box-shadow:none; }
+    .btn-submit.loading::after {
+      content:''; width:20px; height:20px;
+      border:2px solid rgba(255,255,255,.4); border-top-color:#fff;
+      border-radius:50%; animation:spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform:rotate(360deg); } }
+
+    /* Success card */
+    .success-card {
+      background:var(--white); border:2px solid var(--border);
+      border-radius:18px; padding:52px 34px; text-align:center;
+      box-shadow:0 8px 40px rgba(233,30,140,.1); display:none;
+    }
+    .success-card.show { display:block; }
+    .success-icon {
+      width:80px; height:80px; background:var(--pink-light); border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-size:36px; margin:0 auto 22px;
+    }
+    .success-card h2 { font-family:'Playfair Display',serif; font-size:28px; font-weight:700; margin-bottom:12px; }
+    .success-card p { font-size:15px; color:var(--muted); margin-bottom:28px; max-width:480px; margin-left:auto; margin-right:auto; }
+    .btn-wa-success {
+      display:inline-flex; align-items:center; gap:10px;
+      background:#25D366; color:#fff; text-decoration:none;
+      padding:15px 30px; border-radius:12px;
+      font-size:17px; font-weight:700; transition:background .2s;
+    }
+    .btn-wa-success:hover { background:#1ebe5d; }
+
+    /* FAQ */
+    .faq-list { max-width:720px; margin:0 auto; }
+    .faq-item { border-bottom:1px solid var(--border); }
+    .faq-q {
+      padding:18px 0; font-weight:700; font-size:15px; cursor:pointer;
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      color:var(--charcoal);
+    }
+    .faq-q .arr { font-size:22px; color:var(--pink); flex-shrink:0; transition:transform .25s; }
+    .faq-item.open .faq-q .arr { transform:rotate(45deg); }
+    .faq-a { font-size:14px; color:var(--muted); max-height:0; overflow:hidden; transition:max-height .3s ease, padding .3s; }
+    .faq-item.open .faq-a { max-height:220px; padding-bottom:18px; }
+
+    /* Mission */
+    .mission-sec {
+      background:var(--charcoal); color:var(--white);
+      padding:56px 24px; text-align:center; margin-top:70px;
+    }
+    .mission-sec h2 { font-family:'Playfair Display',serif; font-size:28px; font-weight:700; margin-bottom:14px; }
+    .mission-sec p { max-width:640px; margin:0 auto; color:#bbb; font-size:15px; line-height:1.75; }
+
+    /* Footer */
+    footer { background:#12121f; color:#bbb; padding:50px 24px 24px; }
+    .footer-grid {
+      max-width:1160px; margin:0 auto 36px;
+      display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:36px;
+    }
+    @media(max-width:640px){ .footer-grid { grid-template-columns:1fr; } }
+    footer h4 { font-family:'Playfair Display',serif; color:var(--white); font-size:16px; font-weight:700; margin-bottom:14px; }
+    .footer-logo { font-family:'Playfair Display',serif; font-size:23px; font-weight:700; color:#fff; margin-bottom:8px; }
+    .footer-logo span { color:var(--rose); }
+    footer p { font-size:13.5px; line-height:1.8; }
+    footer ul { list-style:none; }
+    footer ul li a { color:#aaa; text-decoration:none; font-size:13.5px; line-height:2.2; transition:color .2s; }
+    footer ul li a:hover { color:var(--rose); }
+    .footer-bottom {
+      border-top:1px solid #2a2a3f; padding-top:20px; text-align:center;
+      font-size:12px; color:#555; max-width:1160px; margin:0 auto;
+    }
+
+    /* Floating WhatsApp */
+    .wa-float {
+      position:fixed; bottom:24px; right:24px; z-index:300;
+      background:#25D366; color:#fff; width:60px; height:60px;
+      border-radius:50%; display:flex; align-items:center; justify-content:center;
+      box-shadow:0 4px 20px rgba(37,211,102,.45); text-decoration:none;
+      transition:transform .2s, box-shadow .2s;
+      animation:wa-pulse 2.5s ease infinite;
+    }
+    .wa-float:hover { transform:scale(1.12); box-shadow:0 6px 28px rgba(37,211,102,.6); }
+    @keyframes wa-pulse {
+      0%,100%{ box-shadow:0 4px 20px rgba(37,211,102,.4); }
+      50%{ box-shadow:0 4px 32px rgba(37,211,102,.75); }
+    }
+
+    .toast {
+      position:fixed; top:20px; right:20px;
+      background:var(--charcoal); color:#fff;
+      padding:14px 22px; border-radius:10px;
+      font-size:14px; font-weight:700;
+      box-shadow:0 4px 20px rgba(0,0,0,.25);
+      transform:translateY(-90px); opacity:0; transition:all .3s; z-index:999;
+    }
+    .toast.show { transform:translateY(0); opacity:1; }
+    .anchor { scroll-margin-top:90px; }
+
+    @media(max-width:480px){
+      .payment-options { flex-direction:column; }
+      .order-body { padding:20px; }
+      .order-card-header { padding:20px; }
+      .bonus-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="ann-bar">🌙 <span>40,000+</span> Brothers & Sisters Learning Quranic Arabic &nbsp;·&nbsp; 5 FREE Bonus eBooks Included</div>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <div>
+      <a href="#" class="logo">AL <span>HIDAYA</span></a>
+      <div class="header-tagline">Quranic Learning Resources — Pakistan</div>
+    </div>
+    <a href="https://wa.me/923179551011" target="_blank" class="wa-header-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Chat on WhatsApp
+    </a>
+  </div>
+</header>
+
+<!-- ═══ PRODUCT HERO ═══ -->
+<div class="product-section">
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="gallery-main">
+      <img id="mainImg" src="https://alhidaya.in/cdn/shop/files/5_1a7eecf3-dae2-4ca0-b869-774de7cf6021.jpg?v=1761030710&width=1000" alt="Top 600 Repeated Words of the Quran" />
+    </div>
+    <div class="thumbs">
+      <button class="active" onclick="setImg(this,'https://alhidaya.in/cdn/shop/files/5_1a7eecf3-dae2-4ca0-b869-774de7cf6021.jpg?v=1761030710&width=900')"><img src="https://alhidaya.in/cdn/shop/files/5_1a7eecf3-dae2-4ca0-b869-774de7cf6021.jpg?v=1761030710&width=150" alt=""/></button>
+      <button onclick="setImg(this,'https://alhidaya.in/cdn/shop/files/7_d61c72d6-74f2-4274-b80f-445e65f2affc.jpg?v=1761030710&width=900')"><img src="https://alhidaya.in/cdn/shop/files/7_d61c72d6-74f2-4274-b80f-445e65f2affc.jpg?v=1761030710&width=150" alt=""/></button>
+      <button onclick="setImg(this,'https://alhidaya.in/cdn/shop/files/5_81e84523-a42b-4c25-b001-07950cfc6eb6.jpg?v=1761030710&width=900')"><img src="https://alhidaya.in/cdn/shop/files/5_81e84523-a42b-4c25-b001-07950cfc6eb6.jpg?v=1761030710&width=150" alt=""/></button>
+      <button onclick="setImg(this,'https://alhidaya.in/cdn/shop/files/8_78c172da-3f01-40f6-be5a-598f085a405c.jpg?v=1761030710&width=900')"><img src="https://alhidaya.in/cdn/shop/files/8_78c172da-3f01-40f6-be5a-598f085a405c.jpg?v=1761030710&width=150" alt=""/></button>
+      <button onclick="setImg(this,'https://alhidaya.in/cdn/shop/files/6_b1f48112-f78d-415f-ae1c-99026f5a4606.jpg?v=1761030710&width=900')"><img src="https://alhidaya.in/cdn/shop/files/6_b1f48112-f78d-415f-ae1c-99026f5a4606.jpg?v=1761030710&width=150" alt=""/></button>
+      <button onclick="setImg(this,'https://alhidaya.in/cdn/shop/files/9_b9e5395d-ba02-4f89-b827-e0e20fcd4cee.jpg?v=1761030710&width=900')"><img src="https://alhidaya.in/cdn/shop/files/9_b9e5395d-ba02-4f89-b827-e0e20fcd4cee.jpg?v=1761030710&width=150" alt=""/></button>
+    </div>
+  </div>
+
+  <!-- Product Info -->
+  <div class="prod-info">
+    <span class="prod-badge">✦ Digital Bundle + 5 FREE Bonus eBooks</span>
+    <h1>Top 600 Repeated Words of the Quran + Bonus</h1>
+    <div>
+      <span class="stars">★★★★★</span>
+      <span class="reviews-count">40,000+ Happy Students</span>
+    </div>
+    <div class="price-block">
+      <div class="price-sale">Rs. 900</div>
+      <div class="price-orig">Rs. 3,500</div>
+      <div class="discount-pill">74% OFF</div>
+    </div>
+
+    <!-- VIDEO THUMBNAILS — bigger & clickable -->
+    <div>
+      <div class="vid-section-label">🎬 Customer Reviews</div>
+      <div class="vid-row">
+        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%201" target="_blank">
+          <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/fd262ff5ecb14463b3afe2da6188fe51.thumbnail.0000000000.jpg?v=1761136845&width=300" alt="Review 1"/>
+          <div class="vid-play"></div>
+          <div class="vid-label">Review 1</div>
+          <span class="vid-dur">00:46</span>
+        </a>
+        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%202" target="_blank">
+          <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/d35d581cd18f47d5b1a08ecaa0859583.thumbnail.0000000000.jpg?v=1761137425&width=300" alt="Review 2"/>
+          <div class="vid-play"></div>
+          <div class="vid-label">Review 2</div>
+          <span class="vid-dur">00:59</span>
+        </a>
+        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%203" target="_blank">
+          <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/15614338459a4736a2dabdff728b8281.thumbnail.0000000000.jpg?v=1761137440&width=300" alt="Review 3"/>
+          <div class="vid-play"></div>
+          <div class="vid-label">Review 3</div>
+          <span class="vid-dur">00:58</span>
+        </a>
+        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%204" target="_blank">
+          <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/4d2c0eee67d5459b8038f1b1200722a8.thumbnail.0000000000.jpg?v=1761137439&width=300" alt="Review 4"/>
+          <div class="vid-play"></div>
+          <div class="vid-label">Review 4</div>
+          <span class="vid-dur">00:55</span>
+        </a>
+        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%205" target="_blank">
+          <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/d533fb58f13740659b7dc56ef9fc348d.thumbnail.0000000000.jpg?v=1761136822&width=300" alt="Review 5"/>
+          <div class="vid-play"></div>
+          <div class="vid-label">Review 5</div>
+          <span class="vid-dur">00:32</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="#order" class="btn-order-cta">Order Now — PKR 900 Only →</a>
+    <div class="trust-row">
+      <span class="trust-item">🔒 Secure Order</span>
+      <span class="trust-item">⚡ Instant Delivery</span>
+      <span class="trust-item">↩️ 7-Day Refund</span>
+    </div>
+  </div>
+</div>
+
+<!-- Why eBook -->
+<div class="section-wrap">
+  <h2 class="sec-heading">Why This eBook?</h2>
+  <div class="pink-rule"></div>
+  <div class="feat-grid">
+    <div class="feat-card"><div class="fc-icon">📖</div><h3>Understand the Words of Allah</h3><p>Deepen your connection with the Quran by learning to comprehend the sacred words of Allah directly.</p></div>
+    <div class="feat-card"><div class="fc-icon">🤲</div><h3>Enhance Your Salah Experience</h3><p>Improve focus and spiritual presence in your prayers by understanding the verses you recite.</p></div>
+    <div class="feat-card"><div class="fc-icon">💡</div><h3>From Memorization to Meaning</h3><p>Transform rote memorization into true understanding by connecting common words across every ayah.</p></div>
+    <div class="feat-card"><div class="fc-icon">🌿</div><h3>Strengthen Your Knowledge</h3><p>Gain deeper insight into Islamic teachings with clear explanations and practical examples.</p></div>
+    <div class="feat-card"><div class="fc-icon">🗣️</div><h3>Recite With Confidence</h3><p>Use transliterations and guided examples to recite accurately and with full confidence.</p></div>
+    <div class="feat-card"><div class="fc-icon">🎁</div><h3>5 Free Bonus eBooks</h3><p>Get 5 additional Quranic resource eBooks absolutely free — worth Rs. 2,500 alone!</p></div>
+    <div class="feat-card"><div class="fc-icon">📥</div><h3>Immediate Download</h3><p>Get instant access to your full eBook package right after your order is confirmed.</p></div>
+    <div class="feat-card"><div class="fc-icon">✅</div><h3>Beginner Friendly</h3><p>Structured for complete beginners — no prior Arabic or Urdu knowledge needed at all.</p></div>
+  </div>
+</div>
+
+<!-- Book Features -->
+<div class="section-wrap">
+  <h2 class="sec-heading">Everything Inside the Bundle</h2>
+  <div class="pink-rule"></div>
+  <div class="book-feats">
+    <div class="book-feat">
+      <img src="https://cdn.shopify.com/s/files/1/0639/3505/3958/files/12_1c37e624-2346-40d7-aac9-608f65c30971.jpg?v=1760869224" alt="Top 600 Words"/>
+      <div class="book-feat-txt">
+        <h3>Top 600 Words of The Qur'an eBook</h3>
+        <p>Learn the 600 most repeated Quranic words with English and Roman Urdu translations. Mastering these words gives you the ability to understand most of the Quran without advanced Arabic knowledge. Perfect for beginners and lifelong learners alike.</p>
+      </div>
+    </div>
+    <div class="book-feat rev">
+      <img src="https://cdn.shopify.com/s/files/1/0639/3505/3958/files/13_309091d1-ea8a-4403-a006-48ff6f65bd46.jpg?v=1760869279" alt="Roman Urdu Translation"/>
+      <div class="book-feat-txt">
+        <h3>Quran Translation in Roman Urdu</h3>
+        <p>Written entirely in English alphabets, this translation is ideal for those who struggle with Arabic or Urdu script. Simple, accessible, and spiritually enriching — whether you are a beginner or a seasoned learner.</p>
+      </div>
+    </div>
+    <div class="book-feat">
+      <img src="https://cdn.shopify.com/s/files/1/0639/3505/3958/files/11_53d9fc46-7fec-4f2c-bdd3-eb9d200891fc.jpg?v=1760869316" alt="Tajweed Guide"/>
+      <div class="book-feat-txt">
+        <h3>Guide to Tajweed Rules</h3>
+        <p>Master the art of beautiful Quranic recitation with this clear Tajweed guide. Improve your pronunciation and fluency so you recite Allah's words correctly and earn maximum spiritual reward.</p>
+      </div>
+    </div>
+    <div class="book-feat rev">
+      <img src="https://cdn.shopify.com/s/files/1/0639/3505/3958/files/14_278c80b4-6c05-4ff5-8ed9-5d748f63ac05.jpg?v=1760869349" alt="Traceable Quran"/>
+      <div class="book-feat-txt">
+        <h3>Traceable Quran eBook</h3>
+        <p>Trace and write each verse to strengthen your connection with the Quran. Printable and easy to use, it is perfect for learners of all ages looking to build a daily worship habit.</p>
+      </div>
+    </div>
+    <div class="book-feat">
+      <img src="https://cdn.shopify.com/s/files/1/0639/3505/3958/files/12_c1348df4-48f3-45fa-acf7-b7cef67bbb90.jpg?v=1760869386" alt="Scientific Insights"/>
+      <div class="book-feat-txt">
+        <h3>Scientific Insights in the Quran</h3>
+        <p>Explore incredible scientific facts mentioned in the Quran centuries before modern discovery. This eBook bridges faith and reason, deepening appreciation for Allah's creation and strengthening your imaan.</p>
+      </div>
+    </div>
+    <div class="book-feat rev">
+      <img src="https://cdn.shopify.com/s/files/1/0639/3505/3958/files/15_eee17699-81fb-43c7-a8dc-5c546f94ab1e.jpg?v=1760869434" alt="Stories from Quran"/>
+      <div class="book-feat-txt">
+        <h3>Stories from the Quran eBook</h3>
+        <p>Discover the wisdom and lessons within the Quran through its captivating stories of prophets and past nations. Complex teachings made accessible and engaging for all ages.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 5 FREE BONUS SECTION ═══ -->
+<div class="bonus-section">
+  <div class="bonus-inner">
+    <div class="bonus-header">
+      <h2>🎁 <span>5 FREE Bonus eBooks</span> Included!</h2>
+      <p>Order today and receive these 5 premium Islamic eBooks absolutely free — only while stock lasts</p>
+    </div>
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <div class="bonus-num">1</div>
+        <div class="bonus-card-txt">
+          <h4>Quran Roman Urdu Translation</h4>
+          <p>Full Quran translation in English alphabets — ideal for those who find Arabic or Urdu script difficult. Simple, clear and spiritually enriching for every reader.</p>
+          <span class="bonus-value">Value: Rs. 500 FREE</span>
+        </div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-num">2</div>
+        <div class="bonus-card-txt">
+          <h4>Tajweed Rules</h4>
+          <p>Master the art of beautiful Quranic recitation with this clear Tajweed guide. Improve pronunciation and recite Allah's words with full accuracy and confidence.</p>
+          <span class="bonus-value">Value: Rs. 500 FREE</span>
+        </div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-num">3</div>
+        <div class="bonus-card-txt">
+          <h4>Quran Tracing eBook</h4>
+          <p>Trace and write each verse to strengthen your bond with the Quran. Printable and easy to use — perfect for all ages to build a daily worship habit.</p>
+          <span class="bonus-value">Value: Rs. 500 FREE</span>
+        </div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-num">4</div>
+        <div class="bonus-card-txt">
+          <h4>Sciences of the Qur'an</h4>
+          <p>Explore incredible scientific insights mentioned in the Quran centuries before modern discovery. Bridges faith and reason — perfect for strengthening your imaan.</p>
+          <span class="bonus-value">Value: Rs. 500 FREE</span>
+        </div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-num">5</div>
+        <div class="bonus-card-txt">
+          <h4>Stories of the Qur'an</h4>
+          <p>Captivating stories of prophets and past nations from the Quran. Complex teachings made accessible and engaging for readers of all ages.</p>
+          <span class="bonus-value">Value: Rs. 500 FREE</span>
+        </div>
+      </div>
+    </div>
+    <div class="bonus-total">
+      <p>Total value of everything you get:</p>
+      <div class="big-val">Rs. 6,000+ Worth of Content</div>
+      <div class="you-pay">You pay only <strong>Rs. 900</strong> for the complete eBook bundle 🎉</div>
+    </div>
+  </div>
+</div>
+
+<!-- Social Proof -->
+<div class="section-wrap">
+  <div class="proof-banner">
+    <h2>Mashallah — <span class="pink-num">40,000+</span> Brothers & Sisters</h2>
+    <p>have already received and are benefiting from this bundle. Join them today, insha'Allah.</p>
+    <a href="#order" class="btn-proof-cta">Order Your Bundle Now →</a>
+  </div>
+</div>
+
+<!-- ═══ ORDER / CHECKOUT ═══ -->
+<div class="order-section anchor" id="order" style="margin-bottom:70px;">
+  <div class="order-card" id="orderCard">
+    <div class="order-card-header">
+      <div class="icon">📦</div>
+      <div>
+        <h2>Place Your Order</h2>
+        <p>Select product, fill details & send payment — we confirm via WhatsApp</p>
+      </div>
+    </div>
+    <div class="order-body">
+
+      <!-- Step 1 -->
+      <span class="section-label">Step 1 — Select Your Product</span>
+      <div class="product-options" id="productOptions">
+
+        <label class="product-option selected" onclick="selectProduct(this,'ebook','Top 600 Words eBook + 5 Bonus eBooks (Digital)',900)">
+          <input type="radio" name="product" value="ebook" checked/>
+          <div class="radio-dot"></div>
+          <img class="opt-img" src="https://alhidaya.in/cdn/shop/files/5_1a7eecf3-dae2-4ca0-b869-774de7cf6021.jpg?v=1761030710&width=150" alt="eBook"/>
+          <div class="opt-details">
+            <div class="opt-name">Top 600 Words eBook + 5 Bonus eBooks</div>
+            <div class="opt-type">📱 Digital — Instant Download via WhatsApp</div>
+            <div class="opt-includes">✓ Main eBook + 5 FREE Bonus eBooks included</div>
+          </div>
+          <div class="opt-price">Rs. 900</div>
+          <div class="opt-badge">🔥 Best Value</div>
+        </label>
+
+        <label class="product-option" onclick="selectProduct(this,'bundle','eBook + Bonus + Physical Hard Copy (Full Bundle)',1200)">
+          <input type="radio" name="product" value="bundle"/>
+          <div class="radio-dot"></div>
+          <img class="opt-img" src="https://alhidaya.in/cdn/shop/files/Frontphphoto.png?v=1764695631&width=150" alt="Bundle"/>
+          <div class="opt-details">
+            <div class="opt-name">eBook + Bonus + Physical Hard Copy</div>
+            <div class="opt-type">📦 Printed Book Delivered + All Digital eBooks</div>
+            <div class="opt-includes">✓ Perfect gift for parents, kids or grand parents 🎁</div>
+          </div>
+          <div class="opt-price">Rs. 1,200</div>
+        </label>
+
+      </div>
+
+      <!-- Step 2 -->
+      <span class="section-label">Step 2 — Your Delivery Details</span>
+      <div class="form-grid">
+        <div class="field">
+          <label>Full Name <span class="req">*</span></label>
+          <input type="text" id="fname" placeholder="e.g. Ahmed Ali"/>
+          <span class="err-msg">Please enter your full name</span>
+        </div>
+        <div class="field">
+          <label>Mobile / WhatsApp <span class="req">*</span></label>
+          <input type="tel" id="fphone" placeholder="e.g. 03001234567"/>
+          <span class="err-msg">Please enter a valid mobile number</span>
+        </div>
+        <div class="field">
+          <label>City <span class="req">*</span></label>
+          <input type="text" id="fcity" placeholder="e.g. Karachi"/>
+          <span class="err-msg">Please enter your city</span>
+        </div>
+        <div class="field full">
+          <label>Complete Address <span class="req">*</span></label>
+          <textarea id="faddress" placeholder="House/Flat no., Street, Area, City…" rows="3"></textarea>
+          <span class="err-msg">Please enter your complete address</span>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <span class="section-label" style="margin-bottom:12px;">Step 3 — Select Payment Method</span>
+      <div class="payment-options" id="paymentOptions">
+        <div class="pay-opt selected" onclick="selectPay(this,'Easypaisa')">
+          <input type="radio" name="payment" value="Easypaisa" checked/>
+          <div class="pay-logo">💚</div>
+          <div class="pay-name">Easypaisa</div>
+          <div class="pay-desc">03339830910</div>
+          <div class="pay-check">✓</div>
+        </div>
+        <div class="pay-opt" onclick="selectPay(this,'JazzCash')">
+          <input type="radio" name="payment" value="JazzCash"/>
+          <div class="pay-logo">🔴</div>
+          <div class="pay-name">JazzCash</div>
+          <div class="pay-desc">03339830910</div>
+          <div class="pay-check">✓</div>
+        </div>
+        <div class="pay-opt" onclick="selectPay(this,'Bank Transfer')">
+          <input type="radio" name="payment" value="Bank Transfer"/>
+          <div class="pay-logo">🏦</div>
+          <div class="pay-name">Bank Transfer</div>
+          <div class="pay-desc">MCB Islamic Bank</div>
+          <div class="pay-check">✓</div>
+        </div>
+      </div>
+
+      <!-- Payment Details Box — shown dynamically -->
+      <div class="pay-details-box show" id="payDetailsBox">
+        <h4 id="payDetailsTitle">💚 Easypaisa / JazzCash Payment Details</h4>
+        <div id="payDetailsContent">
+          <div class="pay-detail-row">
+            <span class="lbl">Name:</span>
+            <span class="val">Muhammad Waqar</span>
+          </div>
+          <div class="pay-detail-row">
+            <span class="lbl">Number:</span>
+            <span class="val" id="payNumber">03339830910</span>
+            <button class="copy-btn" onclick="copyText('03339830910')">Copy</button>
+          </div>
+          <div class="pay-detail-row" style="margin-top:8px;font-size:12px;color:var(--muted);">
+            ✅ Send the amount then screenshot to our WhatsApp
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary" id="orderSummary" style="margin-top:22px;">
+        <div class="summary-item">Product: <strong id="summProduct">Top 600 Words eBook + 5 Bonus eBooks (Digital)</strong></div>
+        <div class="summary-item">Payment: <strong id="summPay">Easypaisa</strong></div>
+        <div class="summary-total">Total: <span id="summPrice">Rs. 900</span></div>
+      </div>
+
+      <button class="btn-submit" id="submitBtn" onclick="submitOrder()">
+        <span id="btnText">✦ Confirm My Order</span>
+      </button>
+      <div class="trust-row" style="margin-top:16px;">
+        <span class="trust-item">🔒 Your info is safe</span>
+        <span class="trust-item">📲 Confirmed via WhatsApp</span>
+        <span class="trust-item">↩️ 7-Day money back</span>
+      </div>
+
+    </div><!-- /order-body -->
+  </div><!-- /order-card -->
+
+  <!-- Success -->
+  <div class="success-card" id="successCard">
+    <div class="success-icon">🎉</div>
+    <h2>Order Placed! Jazakallah Khair 🌙</h2>
+    <p>Your order has been recorded successfully. Now please send us your payment screenshot on WhatsApp and we'll confirm your order within minutes, insha'Allah!</p>
+    <a id="waSuccessBtn" href="#" target="_blank" class="btn-wa-success">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Send Payment Screenshot on WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section-wrap" style="margin-bottom:70px;">
+  <h2 class="sec-heading">Common Questions</h2>
+  <div class="pink-rule"></div>
+  <div class="faq-list">
+    <div class="faq-item open">
+      <div class="faq-q" onclick="toggleFaq(this)">Is this a physical book or digital? <span class="arr">+</span></div>
+      <div class="faq-a">The Rs. 900 bundle is fully digital and instantly sent after payment confirmation via WhatsApp. The Rs. 1,200 bundle includes the printed hard copy delivered to your door plus all digital eBooks.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How do I pay? <span class="arr">+</span></div>
+      <div class="faq-a">Pay via Easypaisa or JazzCash to 03339830910 (Muhammad Waqar), or via Bank Transfer to MCB Islamic Bank Account No: 1731004648860001 (IBAN: PK54MCIB1731004648860001). Send payment screenshot to our WhatsApp and your order is confirmed.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What are the 5 free bonus eBooks? <span class="arr">+</span></div>
+      <div class="faq-a">You get: (1) Quran Roman Urdu Translation, (2) Tajweed Rules, (3) Quran Tracing eBook, (4) Sciences of the Qur'an, and (5) Stories of the Qur'an — all completely free with your order. These are the same eBooks featured on this page.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What if I am unhappy with the product? <span class="arr">+</span></div>
+      <div class="faq-a">No problem at all — contact us within 7 days of purchase and we will refund your full amount, no questions asked. Your satisfaction is guaranteed.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I buy it as a gift for parents or grandparents? <span class="arr">+</span></div>
+      <div class="faq-a">Absolutely! The Rs. 1,200 physical book bundle makes a beautiful gift for parents, grandparents, or children. We can also deliver directly to their address — just mention it in your order notes.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is Arabic knowledge required? <span class="arr">+</span></div>
+      <div class="faq-a">No prior Arabic knowledge needed. The eBook is specifically designed for complete beginners with Roman Urdu and English explanations throughout.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Mission -->
+<div class="mission-sec">
+  <h2>Our Mission</h2>
+  <p>To facilitate spiritual growth and connection to Allah (SWT) by making the rich heritage of Islamic wisdom easily accessible through high-quality resources — nourishing minds and souls across Pakistan and beyond.</p>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">AL <span>HIDAYA</span></div>
+      <p>Making Quranic learning accessible for every Muslim in Pakistan. Over 40,000 students have benefited — join us today, insha'Allah.</p>
+    </div>
+    <div>
+      <h4>Payment Info</h4>
+      <p>
+        <strong style="color:#ddd">Easypaisa / JazzCash:</strong><br/>
+        03339830910<br/>
+        Muhammad Waqar<br/><br/>
+        <strong style="color:#ddd">MCB Islamic Bank:</strong><br/>
+        A/C: 1731004648860001<br/>
+        IBAN: PK54MCIB1731004648860001
+      </p>
+    </div>
+    <div>
+      <h4>Contact & Links</h4>
+      <p style="margin-bottom:10px;">
+        <a href="https://wa.me/923179551011" style="color:#6effa0;">WhatsApp: +92 317 9551011</a><br/>
+        Hours: 9 AM – 7 PM (Fri Off)
+      </p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="https://wa.me/923179551011">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 AL HIDAYA — All Rights Reserved &nbsp;|&nbsp; <a href="#">Privacy</a> · <a href="#">Refund</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/923179551011" target="_blank" class="wa-float" title="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  const WHATSAPP = '923179551011';
+  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbw03dpPWMKNyOcYwAswSlsWbrH3twVaK5asP6u053L1MdgkKh6XOv5-6fZlT97rV-9Jzg/exec';
+
+  const PAYMENT_DETAILS = {
+    'Easypaisa': {
+      title: '💚 Easypaisa Payment Details',
+      html: `
+        <div class="pay-detail-row"><span class="lbl">Name:</span><span class="val">Muhammad Waqar</span></div>
+        <div class="pay-detail-row"><span class="lbl">Number:</span><span class="val">03339830910</span><button class="copy-btn" onclick="copyText('03339830910')">Copy</button></div>
+        <div class="pay-detail-row" style="margin-top:8px;font-size:12px;color:var(--muted);">✅ Send the exact amount then send screenshot to WhatsApp</div>`
+    },
+    'JazzCash': {
+      title: '🔴 JazzCash Payment Details',
+      html: `
+        <div class="pay-detail-row"><span class="lbl">Name:</span><span class="val">Muhammad Waqar</span></div>
+        <div class="pay-detail-row"><span class="lbl">Number:</span><span class="val">03339830910</span><button class="copy-btn" onclick="copyText('03339830910')">Copy</button></div>
+        <div class="pay-detail-row" style="margin-top:8px;font-size:12px;color:var(--muted);">✅ Send the exact amount then send screenshot to WhatsApp</div>`
+    },
+    'Bank Transfer': {
+      title: '🏦 MCB Islamic Bank Transfer Details',
+      html: `
+        <div class="pay-detail-row"><span class="lbl">Name:</span><span class="val">Muhammad Waqar</span></div>
+        <div class="pay-detail-row"><span class="lbl">Bank:</span><span class="val">MCB Islamic Bank</span></div>
+        <div class="pay-detail-row"><span class="lbl">A/C No:</span><span class="val">1731004648860001</span><button class="copy-btn" onclick="copyText('1731004648860001')">Copy</button></div>
+        <div class="pay-detail-row"><span class="lbl">IBAN:</span><span class="val">PK54MCIB1731004648860001</span><button class="copy-btn" onclick="copyText('PK54MCIB1731004648860001')">Copy</button></div>
+        <div class="pay-detail-row" style="margin-top:8px;font-size:12px;color:var(--muted);">✅ After transfer, send receipt screenshot to WhatsApp</div>`
+    }
+  };
+
+  let selectedProduct = { id:'ebook', name:'Top 600 Words eBook + 5 Bonus eBooks (Digital)', price:900 };
+  let selectedPayment = 'Easypaisa';
+
+  function setImg(btn, url) {
+    document.getElementById('mainImg').src = url;
+    document.querySelectorAll('.thumbs button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  function selectProduct(el, id, name, price) {
+    document.querySelectorAll('.product-option').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+    selectedProduct = { id, name, price };
+    updateSummary();
+  }
+
+  function selectPay(el, method) {
+    document.querySelectorAll('.pay-opt').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+    selectedPayment = method;
+    updatePayDetails(method);
+    updateSummary();
+  }
+
+  function updatePayDetails(method) {
+    const box = document.getElementById('payDetailsBox');
+    const info = PAYMENT_DETAILS[method];
+    document.getElementById('payDetailsTitle').textContent = info.title;
+    document.getElementById('payDetailsContent').innerHTML = info.html;
+    box.classList.add('show');
+  }
+
+  function copyText(text) {
+    navigator.clipboard.writeText(text).then(() => showToast('✓ Copied: ' + text));
+  }
+
+  function updateSummary() {
+    document.getElementById('summProduct').textContent = selectedProduct.name;
+    document.getElementById('summPay').textContent = selectedPayment;
+    document.getElementById('summPrice').textContent = 'Rs. ' + selectedProduct.price.toLocaleString();
+  }
+
+  function toggleFaq(el) { el.closest('.faq-item').classList.toggle('open'); }
+
+  function validate() {
+    let ok = true;
+    const fields = [
+      { id:'fname',    test: v => v.trim().length >= 2 },
+      { id:'fphone',   test: v => /^[0-9+\s\-]{10,15}$/.test(v.trim()) },
+      { id:'fcity',    test: v => v.trim().length >= 2 },
+      { id:'faddress', test: v => v.trim().length >= 8 },
+    ];
+    fields.forEach(f => {
+      const el = document.getElementById(f.id);
+      if (!f.test(el.value)) { el.classList.add('error'); ok = false; }
+      else el.classList.remove('error');
+    });
+    return ok;
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3000);
+  }
+
+  async function submitOrder() {
+    if (!validate()) { showToast('⚠️ Please fill all required fields'); return; }
+
+    const btn = document.getElementById('submitBtn');
+    const btnText = document.getElementById('btnText');
+    btn.disabled = true;
+    btnText.textContent = 'Submitting…';
+    btn.classList.add('loading');
+
+    const order = {
+      timestamp: new Date().toLocaleString('en-PK', { timeZone:'Asia/Karachi' }),
+      name:      document.getElementById('fname').value.trim(),
+      phone:     document.getElementById('fphone').value.trim(),
+      city:      document.getElementById('fcity').value.trim(),
+      address:   document.getElementById('faddress').value.trim(),
+      product:   selectedProduct.name,
+      price:     'Rs. ' + selectedProduct.price,
+      payment:   selectedPayment,
+    };
+
+    try {
+      if (SHEET_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
+        await fetch(SHEET_URL, {
+          method:'POST', mode:'no-cors',
+          headers:{'Content-Type':'application/json'},
+          body: JSON.stringify(order)
+        });
+      }
+    } catch(e) {}
+
+    const payInfo = selectedPayment === 'Bank Transfer'
+      ? `MCB Islamic Bank\nA/C: 1731004648860001\nIBAN: PK54MCIB1731004648860001\nName: Muhammad Waqar`
+      : `${selectedPayment}: 03339830910 (Muhammad Waqar)`;
+
+    const msg = `*New Order — AL HIDAYA* 🌙
+
+*Name:* ${order.name}
+*Phone:* ${order.phone}
+*City:* ${order.city}
+*Address:* ${order.address}
+
+*Product:* ${order.product}
+*Total:* ${order.price}
+*Payment Method:* ${order.payment}
+
+*Payment Details:*
+${payInfo}
+
+Please confirm my order. JazakAllah Khair! 🤲`;
+
+    const waURL = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+    document.getElementById('waSuccessBtn').href = waURL;
+
+    document.getElementById('orderCard').style.display = 'none';
+    document.getElementById('successCard').classList.add('show');
+    window.scrollTo({ top: document.getElementById('order').offsetTop - 100, behavior:'smooth' });
+
+    btn.disabled = false;
+    btnText.textContent = '✦ Confirm My Order';
+    btn.classList.remove('loading');
+  }
+</script>
+</body>
+</html>
