@@ -174,14 +174,15 @@
       position:relative; cursor:pointer;
       border:2px solid var(--border); background:#000;
       transition: border-color .2s, transform .2s, box-shadow .2s;
-      text-decoration: none; display: block;
+      display: block;
     }
     .vid-thumb:hover { border-color:var(--pink); transform: scale(1.04); box-shadow: 0 6px 20px rgba(233,30,140,.25); }
-    .vid-thumb img { width:100%; height:88px; object-fit:cover; display:block; opacity:.82; }
+    .vid-thumb img { width:100%; height:88px; object-fit:cover; display:block; opacity:.82; pointer-events:none; }
     .vid-dur {
       position:absolute; bottom:6px; right:7px;
       font-size:11px; color:#fff; font-weight:700;
       background:rgba(0,0,0,.65); padding:2px 6px; border-radius:4px;
+      pointer-events:none;
     }
     .vid-play {
       position:absolute; top:50%; left:50%;
@@ -191,6 +192,7 @@
       display:flex; align-items:center; justify-content:center;
       box-shadow: 0 2px 8px rgba(0,0,0,.3);
       transition: background .2s, transform .2s;
+      pointer-events:none;
     }
     .vid-thumb:hover .vid-play { background: var(--pink); transform: translate(-50%,-58%) scale(1.1); }
     .vid-play::after {
@@ -205,8 +207,42 @@
       background: rgba(0,0,0,.5);
       color: #fff; font-size: 10px;
       padding: 4px 6px; text-align: center;
-      font-weight: 600;
+      font-weight: 600; pointer-events:none;
     }
+
+    /* Video Modal */
+    .vid-modal-overlay {
+      display:none; position:fixed; inset:0; z-index:1000;
+      background:rgba(0,0,0,.85);
+      align-items:center; justify-content:center;
+      padding:20px;
+    }
+    .vid-modal-overlay.open { display:flex; }
+    .vid-modal-box {
+      background:#000; border-radius:14px; overflow:hidden;
+      max-width:500px; width:100%; position:relative;
+      box-shadow:0 20px 60px rgba(0,0,0,.6);
+    }
+    .vid-modal-box video { width:100%; display:block; max-height:80vh; }
+    .vid-modal-close {
+      position:absolute; top:10px; right:12px;
+      background:rgba(255,255,255,.15); color:#fff;
+      border:none; border-radius:50%;
+      width:34px; height:34px; font-size:18px; font-weight:700;
+      cursor:pointer; display:flex; align-items:center; justify-content:center;
+      transition:background .2s; z-index:10;
+    }
+    .vid-modal-close:hover { background:var(--pink); }
+    .vid-modal-title {
+      padding:12px 16px; color:#fff; font-size:13px; font-weight:700;
+      background:rgba(255,255,255,.08); letter-spacing:.04em;
+    }
+    .vid-wa-note {
+      padding:12px 16px; color:#ccc; font-size:12px; text-align:center;
+      background:rgba(255,255,255,.05);
+    }
+    .vid-wa-note a { color:#6effa0; font-weight:700; text-decoration:none; }
+    .vid-wa-note a:hover { text-decoration:underline; }
 
     /* CTA button */
     .btn-order-cta {
@@ -628,38 +664,57 @@
 
     <!-- VIDEO THUMBNAILS — bigger & clickable -->
     <div>
-      <div class="vid-section-label">🎬 Customer Reviews</div>
+      <div class="vid-section-label">🎬 Customer Reviews — Click to Watch</div>
       <div class="vid-row">
-        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%201" target="_blank">
+        <div class="vid-thumb" onclick="openVid('1siBok-N6zAuAQ8_4E5PbaF-1mfuMvQmZ','Customer Review 1')">
           <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/fd262ff5ecb14463b3afe2da6188fe51.thumbnail.0000000000.jpg?v=1761136845&width=300" alt="Review 1"/>
           <div class="vid-play"></div>
           <div class="vid-label">Review 1</div>
           <span class="vid-dur">00:46</span>
-        </a>
-        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%202" target="_blank">
+        </div>
+        <div class="vid-thumb" onclick="openVid('1q__v5oKbPdO5ac2o-DmB1uWMec-Mkgek','Customer Review 2')">
           <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/d35d581cd18f47d5b1a08ecaa0859583.thumbnail.0000000000.jpg?v=1761137425&width=300" alt="Review 2"/>
           <div class="vid-play"></div>
           <div class="vid-label">Review 2</div>
           <span class="vid-dur">00:59</span>
-        </a>
-        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%203" target="_blank">
+        </div>
+        <div class="vid-thumb" onclick="openVid('12nR9hekFucaFGEf68xknMdfdST39PAXU','Customer Review 3')">
           <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/15614338459a4736a2dabdff728b8281.thumbnail.0000000000.jpg?v=1761137440&width=300" alt="Review 3"/>
           <div class="vid-play"></div>
           <div class="vid-label">Review 3</div>
           <span class="vid-dur">00:58</span>
-        </a>
-        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%204" target="_blank">
+        </div>
+        <div class="vid-thumb" onclick="openVid('1_fG58Ae9uaiiIQmPR7K7MZGUU2z_nPqj','Customer Review 4')">
           <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/4d2c0eee67d5459b8038f1b1200722a8.thumbnail.0000000000.jpg?v=1761137439&width=300" alt="Review 4"/>
           <div class="vid-play"></div>
           <div class="vid-label">Review 4</div>
           <span class="vid-dur">00:55</span>
-        </a>
-        <a class="vid-thumb" href="https://wa.me/923179551011?text=I%20want%20to%20see%20the%20video%20review%205" target="_blank">
+        </div>
+        <div class="vid-thumb" onclick="openVid('1TOXZJbFh_Tq-AEcfWdm3TaMoN7jvWXxZ','Customer Review 5')">
           <img src="https://cdn.shopify.com/s/files/1/0730/5127/5454/files/preview_images/d533fb58f13740659b7dc56ef9fc348d.thumbnail.0000000000.jpg?v=1761136822&width=300" alt="Review 5"/>
           <div class="vid-play"></div>
           <div class="vid-label">Review 5</div>
           <span class="vid-dur">00:32</span>
-        </a>
+        </div>
+      </div>
+
+      <!-- Video Modal -->
+      <div class="vid-modal-overlay" id="vidModal" onclick="closeVidOnBg(event)">
+        <div class="vid-modal-box">
+          <button class="vid-modal-close" onclick="closeVid()">✕</button>
+          <div class="vid-modal-title" id="vidModalTitle">Customer Review</div>
+          <div style="position:relative;padding-bottom:177%;height:0;overflow:hidden;">
+            <iframe id="vidPlayer"
+              src=""
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"
+              allow="autoplay; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="vid-wa-note">
+            Can't watch? <a href="https://wa.me/923179551011?text=Please%20share%20the%20customer%20review%20videos" target="_blank">Ask us on WhatsApp →</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1032,7 +1087,29 @@
 
 <script>
   const WHATSAPP = '923179551011';
-  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbw03dpPWMKNyOcYwAswSlsWbrH3twVaK5asP6u053L1MdgkKh6XOv5-6fZlT97rV-9Jzg/exec';
+
+  // ── Video Modal ──
+  function openVid(fileId, title) {
+    const modal = document.getElementById('vidModal');
+    const player = document.getElementById('vidPlayer');
+    const titleEl = document.getElementById('vidModalTitle');
+    titleEl.textContent = '🎬 ' + title;
+    player.src = 'https://drive.google.com/file/d/' + fileId + '/preview';
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeVid() {
+    const modal = document.getElementById('vidModal');
+    const player = document.getElementById('vidPlayer');
+    player.src = '';
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function closeVidOnBg(e) {
+    if (e.target === document.getElementById('vidModal')) closeVid();
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeVid(); });
+  const SHEET_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
 
   const PAYMENT_DETAILS = {
     'Easypaisa': {
