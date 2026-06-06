@@ -222,6 +222,24 @@
   src: url("3b1f2bb9-6f79-45ac-9638-5695cfeacf24") format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+    .countdown-bar { background:linear-gradient(135deg,#1a1a2e 0%,#2d2d44 100%); border-radius:10px; padding:12px 18px; margin-bottom:14px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+    .countdown-label { color:#ff6bb5; font-size:12px; font-weight:700; letter-spacing:.06em; }
+    .countdown-timer { display:flex; gap:8px; align-items:center; }
+    .cd-unit { text-align:center; }
+    .cd-num { background:#e91e8c; color:#fff; font-size:20px; font-weight:900; padding:4px 10px; border-radius:6px; font-family:monospace; min-width:36px; display:block; }
+    .cd-lbl { color:#aaa; font-size:9px; text-transform:uppercase; letter-spacing:.08em; margin-top:2px; display:block; }
+    .cd-sep { color:#e91e8c; font-size:20px; font-weight:900; }
+    .social-proof-bar { background:#fff0fa; border:1px solid #f0c8e8; border-radius:8px; padding:8px 14px; font-size:12px; color:#9c1059; font-weight:700; display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+    .stock-bar { background:#fff3cd; border:1px solid #ffc107; border-radius:8px; padding:8px 14px; font-size:12px; color:#856404; font-weight:700; display:flex; align-items:center; gap:8px; margin-bottom:14px; }
+    .pay-logos { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:10px; }
+    .pay-logo-badge { background:#fff; border:1.5px solid #e0e0e0; border-radius:8px; padding:5px 12px; font-size:11px; font-weight:900; }
+    .pay-logo-badge.ep { color:#00a651; border-color:#00a651; }
+    .pay-logo-badge.jc { color:#e31837; border-color:#e31837; }
+    .pay-logo-badge.mcb { color:#003087; border-color:#003087; }
+    .sticky-buy { position:fixed; bottom:0; left:0; right:0; z-index:500; background:linear-gradient(135deg,#e91e8c 0%,#9c1059 100%); padding:13px 20px; display:none; align-items:center; justify-content:center; box-shadow:0 -4px 20px rgba(233,30,140,.4); }
+    .sticky-buy a { color:#fff; text-decoration:none; font-size:16px; font-weight:900; letter-spacing:.04em; }
+    @media(max-width:820px){ .sticky-buy { display:flex; } }
 </style>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1344,13 +1362,10 @@ src="https://www.facebook.com/tr?id=1545664660241705&ev=PageView&noscript=1"
       <span class="stars">★★★★★</span>
       <span class="reviews-count">40,000+ Happy Students</span>
     </div>
-    <div class="price-block">
-      <div class="price-sale">Rs. 900</div>
-      <div class="price-orig">Rs. 3,500</div>
-      <div class="discount-pill">74% OFF</div>
-    </div>
+    <div class="social-proof-bar">&#128293; Aaj <strong id="orderCount">47</strong> logon ne order kiya &nbsp;|&nbsp; &#11088; 40,000+ Happy Students</div><div class="stock-bar">&#9888; <strong>Sirf <span id="stockCount">12</span> copies baqi hain!</strong> &mdash; Abhi order karein</div><div class="countdown-bar"><div class="countdown-label">&#9201; Special Offer Khatam Ho Rahi Hai:</div><div class="countdown-timer"><div class="cd-unit"><span class="cd-num" id="cd-h">02</span><span class="cd-lbl">Hours</span></div><span class="cd-sep">:</span><div class="cd-unit"><span class="cd-num" id="cd-m">45</span><span class="cd-lbl">Min</span></div><span class="cd-sep">:</span><div class="cd-unit"><span class="cd-num" id="cd-s">30</span><span class="cd-lbl">Sec</span></div></div></div><div class="price-block" style="flex-direction:column;align-items:flex-start;gap:10px;"><div style="font-size:12px;color:#1a1a2e;line-height:2;width:100%;"><div style="font-weight:900;font-size:13px;margin-bottom:2px;">&#128213; Top 600 Words of the Quran (Main eBook)</div>&#10003; Bonus 1 &mdash; Quran Roman Urdu Translation<br/>&#10003; Bonus 2 &mdash; Tajweed Rules Guide<br/>&#10003; Bonus 3 &mdash; Quran Tracing eBook<br/>&#10003; Bonus 4 &mdash; Sciences of the Quran<br/>&#10003; Bonus 5 &mdash; Stories of the Quran</div><div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><div class="price-sale">Rs. 900</div><div class="price-orig">Rs. 3,500</div><div class="discount-pill">74% OFF</div></div></div>
 
       <a href="#order" class="btn-order-cta">Order Now — PKR 900 Only →</a>
+<div class="pay-logos"><span style="font-size:11px;color:#6b5b6e;font-weight:700;">Payment:</span><span class="pay-logo-badge ep">Easypaisa</span><span class="pay-logo-badge jc">JazzCash</span><span class="pay-logo-badge mcb">MCB Islamic</span></div>
 
     <!-- VIDEO THUMBNAILS — bigger & clickable -->
     <div>
@@ -1568,9 +1583,9 @@ src="https://www.facebook.com/tr?id=1545664660241705&ev=PageView&noscript=1"
           <div class="opt-details">
             <div class="opt-name">Top 600 Words eBook + 5 Bonus eBooks</div>
             <div class="opt-type">📱 Digital — Instant Download via WhatsApp</div>
-            <div class="opt-includes">✦ یہ eBook آپ کے لیے ہے — نماز میں سمجھ کر پڑھیں!</div>
-          </div>
+            <divclass="opt-includes" style="font-size:11px;line-height:1.9;color:#1a1a2e;"><strong>&#128213; Top 600 Words of the Quran</strong><br/>&#10003; Bonus 1 &mdash; Quran Roman Urdu Translation<br/>&#10003; Bonus 2 &mdash; Tajweed Rules Guide<br/>&#10003; Bonus 3 &mdash; Quran Tracing eBook<br/>&#10003; Bonus 4 &mdash; Sciences of the Quran<br/>&#10003; Bonus 5 &mdash; Stories of the Quran</div>
           <div class="opt-price">Rs. 900</div>
+          </div>
         </label>
 
         <label class="product-option selected" onclick="selectProduct(this,'bundle','eBook + Bonus + Physical Hard Copy (Full Bundle)',1200)">
@@ -1580,9 +1595,9 @@ src="https://www.facebook.com/tr?id=1545664660241705&ev=PageView&noscript=1"
           <div class="opt-details">
             <div class="opt-name">eBook + Bonus + Physical Hard Copy</div>
             <div class="opt-type">📦 Printed Book Delivered + All Digital eBooks</div>
-            <div class="opt-includes">🎁 والدین اور بچوں کے لیے بہترین تحفہ — گھر پہنچائیں!</div>
-          </div>
+            <divclass="opt-includes" style="font-size:11px;line-height:1.9;color:#1a1a2e;"><strong style="font-size:12px;">&#128215; Top 600 Words + Hard Copy (Physical Book)</strong><br/><div style="display:grid;grid-template-columns:1fr 1fr;gap:0 12px;margin-top:4px;"><div>&#10003; Quran Roman Urdu Translation</div><div>&#10003; Tajweed Rules Guide</div><div>&#10003; Quran Tracing eBook</div><div>&#10003; Sciences of the Quran</div><div>&#10003; Stories of the Quran</div><div>&#10003; 40 Hadith Imam Nawawi</div><div>&#10003; 99 Names of Allah</div><div>&#10003; Daily Duas &amp; Adhkar</div><div>&#10003; Islamic Parenting Guide</div><div style="color:#e91e8c;font-weight:700;">&#128230; 1 Physical Hard Copy</div></div></div>
           <div class="opt-price">Rs. 1,200</div>
+          </div>
           <div class="opt-badge">🎁 Best Gift</div>
         </label>
 
@@ -1675,9 +1690,8 @@ src="https://www.facebook.com/tr?id=1545664660241705&ev=PageView&noscript=1"
       </div>
 
     </div><!-- /order-body -->
-  </div><!-- /order-card -->
+  </div>
 
-  <!-- Success -->
   <div class="success-card" id="successCard">
     <div class="success-icon">🎉</div>
     <h2>Order Placed! Jazakallah Khair 🌙</h2>
@@ -1686,7 +1700,10 @@ src="https://www.facebook.com/tr?id=1545664660241705&ev=PageView&noscript=1"
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
       Send Payment Screenshot on WhatsApp
     </a>
-  </div>
+  </div><!-- /order-card -->
+
+  <!-- Success -->
+  
 </div>
 
 <!-- FAQ -->
@@ -1960,13 +1977,38 @@ JazakAllah Khair! 🤲`;
 
     document.getElementById('orderCard').style.display = 'none';
     document.getElementById('successCard').classList.add('show');
-    window.scrollTo({ top: document.getElementById('order').offsetTop - 100, behavior:'smooth' });
+    document.getElementById('successCard').scrollIntoView({ behavior:'smooth', block:'start' });
 
     btn.disabled = false;
     btnText.textContent = '✦ Confirm My Order';
     btn.classList.remove('loading');
   }
+
+  (function(){
+    var end=new Date();
+    end.setHours(end.getHours()+2,end.getMinutes()+45,end.getSeconds()+30);
+    function update(){
+      var now=new Date(),diff=end-now;
+      if(diff<=0)diff=0;
+      var h=Math.floor(diff/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
+      var hEl=document.getElementById('cd-h'),mEl=document.getElementById('cd-m'),sEl=document.getElementById('cd-s');
+      if(hEl)hEl.textContent=String(h).padStart(2,'0');
+      if(mEl)mEl.textContent=String(m).padStart(2,'0');
+      if(sEl)sEl.textContent=String(s).padStart(2,'0');
+    }
+    setInterval(update,1000);update();
+  })();
+  var oc=document.getElementById('orderCount'),sc=document.getElementById('stockCount');
+  if(oc)oc.textContent=Math.floor(Math.random()*25)+38;
+  if(sc)sc.textContent=Math.floor(Math.random()*8)+8;
+  window.addEventListener('scroll',function(){
+    var sb=document.getElementById('stickyBuy'),od=document.getElementById('order');
+    if(!sb||!od)return;
+    sb.style.display=(od.getBoundingClientRect().top>window.innerHeight)?'flex':'none';
+  });
 </script>
 
+
+<div class="sticky-buy" id="stickyBuy"><a href="#order">&#128722; Abhi Order Karein &mdash; Rs. 900 Only &rarr;</a></div>
 </body>
 </html>
